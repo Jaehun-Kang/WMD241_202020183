@@ -1,0 +1,355 @@
+@import url(https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap);
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 1.125rem;
+  color: oklch(15% 0.02 265);
+}
+
+.background-color-green {
+  background-color: oklch(97% 0.03 160);
+  border-bottom: 0.0625rem solid oklch(90% 0.02 270);
+}
+
+p {
+  margin: 0;
+  line-height: 1.6875rem;
+}
+
+em {
+  font-style: normal;
+  text-decoration-line: underline;
+}
+
+.section {
+  margin-inline: auto;
+  max-width: 75rem;
+}
+
+.top {
+  justify-content: space-between;
+  align-items: center;
+  margin-inline: auto;
+  padding-block: 3rem;
+  padding-inline: 1.5rem;
+}
+
+.middle1 {
+  margin-inline: auto;
+}
+
+.upper-middle-container {
+  justify-content: space-around;
+  padding-inline: 1.5rem;
+  padding-bottom: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.upper-middle1 {
+  text-align: center;
+  max-width: 37.5rem;
+  margin-inline: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.card-inner-text {
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.card-inner-button {
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.875rem;
+  padding: 0.5rem 2rem 0.75rem;
+  margin-bottom: 2rem;
+  display: inline-block;
+  background-color: oklch(80% 0.2 150);
+}
+
+.what-you-get {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.0625rem;
+  line-height: 0.8625rem;
+}
+
+.card-container {
+  justify-content: center;
+  align-items: center;
+  padding-inline: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.card-opt {
+  flex-basis: 0;
+  flex-grow: 1;
+  color: oklch(40% 0.01 270);
+}
+
+.card1 {
+  padding: 2rem;
+}
+
+.card2 {
+  border: 0.0625rem solid oklch(65% 0.16 157);
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  background-color: oklch(100% 0 0);
+}
+
+.card3 {
+  background-color: oklch(100% 0 0);
+}
+
+.card3-container {
+  border: 0.0625rem solid oklch(80% 0.01 270);
+}
+
+.menu-buttons {
+  font-size: 1rem;
+  font-weight: 700;
+  color: oklch(65% 0.16 157);
+  margin-right: 2.5rem;
+  padding-top: 0.3125rem;
+}
+
+.pricing {
+  color: oklch(25% 0.04 182);
+}
+
+.button-last {
+  margin: 0;
+  border: 0.125rem solid oklch(65% 0.16 157);
+  padding: 0.25rem 1.25rem;
+}
+
+h1 {
+  margin-block: 0 1rem;
+  font-size: 3.75rem;
+  letter-spacing: -0.125rem;
+  line-height: 3.75rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+  color: oklch(65% 0.16 157);
+  margin-top: 0;
+}
+
+.inner-container {
+  padding-inline: 1.5rem;
+}
+
+ul {
+  font-size: 1rem;
+  padding-left: 0;
+  line-height: 1.5rem;
+}
+
+.checked-ul {
+  margin-bottom: 3rem;
+  padding-inline: 2rem;
+  list-style-image: url(../../../assets/icon-check-bullet.svg);
+}
+
+.checked-ul > li {
+  padding-block: 0.5rem;
+}
+
+.upper-content {
+  text-align: center;
+}
+
+.banner {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.0625rem;
+  color: oklch(100% 0 0);
+  background-color: oklch(65% 0.16 157);
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  padding-block: 0.25rem;
+}
+
+.grey-banner {
+  font-size: 0.875rem;
+  padding-block: 1.25rem 1.5rem;
+  padding-inline: 2rem;
+  background-color: oklch(96% 0.001 197);
+  border-bottom: 0.0625rem solid oklch(80% 0.01 270);
+}
+
+.card2-main {
+  font-size: 3rem;
+  font-weight: 700;
+  color: oklch(65% 0.16 157);
+  line-height: 3rem;
+  margin-block: 2.5rem 0;
+  padding-inline: 1rem;
+}
+
+.card3-main {
+  font-size: 2.25rem;
+  color: oklch(65% 0.16 157);
+  line-height: 2.25rem;
+  margin-top: 2rem;
+}
+
+.cost {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: oklch(60% 0 270);
+  letter-spacing: -0.0313rem;
+  margin-block: 0.5rem 1.5rem;
+  padding-left: 0.5rem;
+}
+
+.middle1-bottom {
+  max-width: 75rem;
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+  padding-block: 6rem;
+  text-align: center;
+}
+
+.middle1-bottom-content {
+  max-width: 50rem;
+  margin-inline: auto;
+}
+
+.subvert {
+  display: block;
+  margin-inline: auto;
+}
+
+.subvert-quote {
+  font-size: 1.5rem;
+  padding-block: 1rem;
+  line-height: 2.25rem;
+}
+
+.green {
+  color: oklch(65% 0.16 157);
+}
+
+.middle2 {
+  background-color: oklch(100% 0 0);
+  max-width: 75rem;
+  margin-inline: auto;
+}
+
+.middle2-content {
+  padding-inline: 1.5rem;
+  padding-block: 6rem 5rem;
+}
+
+.faq-title {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: -0.125rem;
+  margin-bottom: 1rem;
+}
+
+.flex-faq {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.faq-content {
+  flex-grow: 1;
+  flex-basis: 0;
+  min-width: 35rem;
+}
+
+.question {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.answer {
+  line-height: 1.6875rem;
+  color: oklch(40% 0.01 270);
+}
+
+.background-color-black {
+  background-color: oklch(15% 0.02 265);
+}
+
+.bottom {
+  max-width: 75rem;
+  margin-inline: auto;
+  color: oklch(100% 0 0);
+}
+
+.upper-bottom {
+  padding-block: 6rem;
+}
+
+.bottom-container {
+  padding-inline: 1.5rem;
+  display: flex;
+}
+
+.logo-section {
+  padding-inline: 1rem;
+  flex-basis: 0;
+  flex-grow: 1;
+}
+
+.bottom-logo {
+  display: block;
+  width: 10rem;
+  margin-bottom: 3rem;
+}
+
+.sign-up-button {
+  padding: 1rem 2rem;
+  background-color: oklch(80% 0.2 150);
+  max-width: fit-content;
+}
+
+.sign-up-text {
+  font-size: 1rem;
+  font-weight: 700;
+  color: oklch(15% 0.02 265);
+}
+
+.bottom-menu {
+  flex-basis: 0;
+  flex-grow: 1;
+  display: flex;
+}
+
+.menu-column {
+  flex-basis: 0;
+  flex-grow: 1;
+  padding-inline: 1rem;
+}
+
+.high-menu {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.low-menu {
+  color: oklch(80% 0.2 150);
+  margin-bottom: 1rem;
+}
+
+.rights {
+  font-size: 0.75rem;
+  color: oklch(60% 0 270);
+  padding-inline: 1.5rem;
+  padding-block: 0.75rem;
+}
