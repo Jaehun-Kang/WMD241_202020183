@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+:root {
+  --card-m-y: 1rem;
+  --card-m-x: 1.5rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 150%;
+  color: oklch(0.3 0 0);
+  background-color: oklch(0.9 0 0);
+}
+
+p {
+  margin-block: 0;
+}
+
+img {
+  display: block;
+}
+
+.section {
+  > h2 {
+    text-align: center;
+  }
+}
+
+.container {
+  max-width: 60rem;
+  padding: 5rem;
+  margin-inline: auto;
+  background-color: oklch(0.95 0 0);
+}
+
+.card {
+  margin-top: 2rem;
+  background-color: oklch(1 0 0);
+  border: 1px solid oklch(0.5 0 0);
+  border-radius: 0.75rem;
+
+  .section--opt-pos-rel & {
+    position: relative;
+    &:nth-child(1) {
+      left: 1rem;
+    }
+    &:nth-child(2) {
+      left: 2rem;
+      top: -10rem;
+    }
+    &:nth-child(3) {
+      left: 3rem;
+      top: -20rem;
+    }
+    &:nth-child(4) {
+      left: 4rem;
+      top: -30rem;
+    }
+    &:nth-child(5) {
+      left: 5rem;
+      top: -40rem;
+    }
+  }
+
+  .section--opt-margin-negative & {
+    margin-top: -10rem;
+    position: relative;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    // &:nth-child(1) {
+    //   z-index: 1;
+    // }
+    // &:nth-child(2) {
+    //   z-index: 1;
+    // }
+    // &:nth-child(3) {
+    //   z-index: 1;
+    // }
+    // &:nth-child(4) {
+    //   z-index: 1;
+    // }
+    // &:nth-child(5) {
+    //   z-index: 1;
+    // }
+
+    @for $i from 1 through 5 {
+      &:nth-child(#{$i}) {
+        z-index: #{$i};
+        // z 값을 먹이려면 relative먹여야함
+      }
+    }
+  }
+
+  &:nth-child(1) {
+    margin-top: 0;
+  }
+
+  &__top {
+    padding-block: var(--card-m-y);
+    //앞에 --는 무조건 넣어야함
+    padding-inline: var(--card-m-x);
+    // 위아래 패딩은 좌우패딩보다는 작은게 보기 좋음(눈으로 보기에 1:1로 보여야됨
+  }
+  &__middle {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    // 이미지를 사이즈에 맞게 잘라줌
+    // object-fit: contain;은 자르지 않고 전부 부여주려고 함
+  }
+  &__bottom {
+    padding-block: var(--card-m-y);
+    padding-inline: var(--card-m-x);
+  }
+  &__author {
+    font-weight: 600;
+  }
+  &__author-role {
+  }
+  &__title {
+    font-weight: 600;
+  }
+  &__subtitle {
+    margin-bottom: 1rem;
+    font-weight: 600;
+    color: oklch(0.5 0 0);
+  }
+  &__desc {
+    display: -webkit-box;
+    overflow: hidden;
+    // 넘치는 것들을 안보이게 함
+    -webkit-line-clamp: 3;
+    // 3 줄을 보여줘
+    -webkit-box-orient: vertical;
+    // 벤더 프리픽스
+  }
+  // 기억해둘것
+
+  &--type-new {
+    &::after {
+      position: absolute;
+      top: -0.75rem;
+      right: -0.75rem;
+      content: "N";
+      height: 1lh;
+      aspect-ratio: 1 / 1;
+      // 1lh : 1 line height
+      // width: calc(1lh + 2 * var(--badge-p-x));
+      font-size: 0.875rem;
+      color: #fff;
+      display: block;
+      font-weight: 600;
+      text-align: center;
+      background-color: #ff0000;
+      // overflow-x: hidden;
+      border-radius: 624.9375rem;
+    }
+    & --pos-rel {
+      position: relative;
+    }
+  }
+}
