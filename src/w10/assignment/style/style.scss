@@ -376,7 +376,9 @@ nav {
 
   &__info {
     display: grid;
+    max-width: 72.5rem;
     margin-top: 5rem;
+    margin-inline: auto;
     padding-bottom: 5rem;
     justify-content: space-between;
 
@@ -403,9 +405,12 @@ nav {
     }
 
     &--right {
+      max-width: 38.7656rem;
       font-family: "Roboto Condensed", sans-serif;
       font-weight: 700;
       letter-spacing: 0.0938rem;
+      text-align: right;
+      align-self: center;
       color: #fedb63;
     }
   }
