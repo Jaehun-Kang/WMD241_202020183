@@ -310,6 +310,7 @@ nav {
   padding-inline: 1.5rem;
   font-weight: 700;
   justify-content: center;
+  margin-inline: auto;
   margin-top: 6rem;
 }
 .footer__grid {
