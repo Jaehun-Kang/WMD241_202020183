@@ -174,7 +174,7 @@ nav {
   align-items: center;
 }
 .main__content1--upper-text--flex--view {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-weight: 600;
   letter-spacing: 0.0625rem;
   line-height: 150%;
@@ -201,6 +201,10 @@ nav {
   border-width: 0.0625rem;
   border-color: rgb(229, 231, 235);
 }
+.main__content1--grid--content--title {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
 .main__content1--grid--content--category {
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 500;
@@ -219,7 +223,7 @@ nav {
   align-items: center;
 }
 .main__content2--upper-text--flex--view {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-weight: 600;
   letter-spacing: 0.0625rem;
   line-height: 150%;
